@@ -67,16 +67,13 @@ export default function Home() {
             <div className="flex-1">
               <h3 className="text-muted-foreground text-2xl">Hi, I'm Blessed Zhou</h3>
               <h1 className="text-3xl sm:text-4xl font-medium leading-tight">
-                Data Scientist <span className="inline-block">✨</span>
+                I build data-driven and AI systems <span className="inline-block">✨</span>
               </h1>
             </div>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl text-pretty">
-            Data Scientist with experience in applying machine learning and data analytics to drive actionable business insights.
-            I have worked on projects involving the extraction and processing of structured and unstructured data, predictive modeling for credit scoring and sales forecasting, anomaly detection, and customer behavior analysis.
-            Proficient in Python tools and libraries including scikit-learn, spaCy, pdfplumber, pytesseract, and pandas, with hands-on experience in NLP, clustering, and supervised modeling.
-            I am continuously advancing my skills through studies, personal projects, and the creation of technical content.
+            Applied Data Scientist & ML Engineer turning messy data into clean solutions.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
@@ -142,16 +139,15 @@ export default function Home() {
         <h2 className="text-xl font-medium mb-6 text-muted-foreground">A bit about me</h2>
         <div className="space-y-4 text-muted-foreground text-pretty max-w-xl">
           <p>
-            I love working at the intersection of data science and engineering—where ideas become real systems that
-            people actually use.
+            I have worked on projects involving the extraction and processing of structured and unstructured data, 
+            predictive modeling for credit scoring and sales forecasting, anomaly detection, and customer behavior analysis.
           </p>
           <p>
-            Most of my time is spent training models, building APIs, and making sure things don't break in production. I
-            care a lot about clean code and systems that scale gracefully.
+            Proficient in Python tools and libraries including scikit-learn, spaCy, pdfplumber, pytesseract, 
+            and pandas, with hands-on experience in NLP, clustering, and supervised modeling.
           </p>
           <p>
-            When I'm not coding, you'll find me reading research papers, tinkering with side projects, or exploring new
-            ML frameworks.
+            I am continuously advancing my skills through studies, personal projects, and the creation of technical content.
           </p>
         </div>
       </section>
