@@ -5,50 +5,16 @@ import { Download, Briefcase, FolderGit2 } from "lucide-react"
 import ProjectCard from "./ProjectCard"
 import ModalComponent from "./Modal"
 import WorkItemComponent from "./WorkItem"
+import { allProjects } from "@/components/projects"
+import { toolsList } from "@/components/skills"
+import { Education } from "@/components/education"
 
 export default function Home() {
   const [showWorkExperience, setShowWorkExperience] = useState(false)
   const [showProjects, setShowProjects] = useState(false)
 
-  const allProjects = [
-    {
-      title: "Customer Churn Predictor",
-      description: "Built an ML pipeline that reduced churn by 23% using gradient boosting and real-time scoring.",
-      tags: ["Python", "XGBoost", "FastAPI"],
-      codeUrl: "https://github.com/yourusername/churn-predictor",
-      demoUrl: "https://churn-predictor-demo.vercel.app",
-    },
-    {
-      title: "NLP Sentiment Dashboard",
-      description: "Real-time sentiment analysis on customer feedback with automated insights and alerts.",
-      tags: ["NLP", "Streamlit", "spaCy"],
-      codeUrl: "https://github.com/yourusername/sentiment-dashboard",
-      demoUrl: "https://sentiment-dashboard-demo.vercel.app",
-    },
-    {
-      title: "Recommendation Engine",
-      description: "Collaborative filtering system handling 500k+ users with sub-100ms response times.",
-      tags: ["TensorFlow", "Redis", "Docker"],
-      codeUrl: "https://github.com/yourusername/recommendation-engine",
-      demoUrl: "https://recommendation-demo.vercel.app",
-    },
-    {
-      title: "Time Series Forecaster",
-      description: "LSTM-based forecasting model for inventory optimization with 92% accuracy.",
-      tags: ["PyTorch", "TimeSeries", "MLflow"],
-      codeUrl: "https://github.com/yourusername/timeseries-forecaster",
-      demoUrl: "https://forecaster-demo.vercel.app",
-    },
-    {
-      title: "Anomaly Detection System",
-      description: "Unsupervised learning system detecting fraud patterns in financial transactions.",
-      tags: ["Scikit-learn", "Kafka", "Postgres"],
-      codeUrl: "https://github.com/yourusername/anomaly-detection",
-      demoUrl: "https://anomaly-detection-demo.vercel.app",
-    },
-  ]
-
-  const recentProjects = allProjects.slice(0, 3)
+  // Get the 3 most recently added projects (last 3, reversed so newest appears first)
+  const recentProjects = allProjects.slice(-3).reverse()
 
   return (
     <main className="min-h-screen max-w-3xl mx-auto px-6 py-16 sm:py-24">
@@ -123,7 +89,7 @@ export default function Home() {
       <section className="mb-20">
         <h2 className="text-xl font-medium mb-6 text-muted-foreground">Tools I use</h2>
         <div className="flex flex-wrap gap-2">
-          {["Python", "ML", "APIs", "Deployment", "MLOps", "SQL", "PyTorch", "Docker", "AWS"].map((skill) => (
+          {toolsList.map((skill) => (
             <span
               key={skill}
               className="px-4 py-2 bg-card text-card-foreground rounded-full text-sm border border-border hover:border-primary/50 transition-colors"
@@ -133,6 +99,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Education */}
+      <Education />
 
       {/* About */}
       <section className="mb-20">

@@ -1,5 +1,8 @@
 import { Code2, Database, Rocket, GitBranch, LineChart, FlaskConical } from "lucide-react"
 
+// Tools list for use in page.tsx
+export const toolsList = ["Python", "ML", "APIs", "Deployment", "MLOps", "SQL", "PyTorch", "Docker", "AWS"]
+
 const skillCategories = [
   {
     icon: Code2,
