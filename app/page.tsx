@@ -59,21 +59,24 @@ export default function Home() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-xl animate-pulse-subtle" />
               <img
-                src="/profile-photo.jpg"
+                src="/profile.png"
                 alt="Profile"
                 className="relative w-24 h-24 rounded-full object-cover border-4 border-border"
               />
             </div>
             <div className="flex-1">
-              <p className="text-muted-foreground text-sm">Hi there</p>
+              <h3 className="text-muted-foreground text-2xl">Hi, I'm Blessed Zhou</h3>
               <h1 className="text-3xl sm:text-4xl font-medium leading-tight">
-                I build data-driven and AI systems <span className="inline-block">✨</span>
+                Data Scientist <span className="inline-block">✨</span>
               </h1>
             </div>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl text-pretty">
-            Applied Data Scientist & ML Engineer turning messy data into clean solutions.
+            Data Scientist with experience in applying machine learning and data analytics to drive actionable business insights.
+            I have worked on projects involving the extraction and processing of structured and unstructured data, predictive modeling for credit scoring and sales forecasting, anomaly detection, and customer behavior analysis.
+            Proficient in Python tools and libraries including scikit-learn, spaCy, pdfplumber, pytesseract, and pandas, with hands-on experience in NLP, clustering, and supervised modeling.
+            I am continuously advancing my skills through studies, personal projects, and the creation of technical content.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
