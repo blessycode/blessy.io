@@ -14,7 +14,7 @@ export const skillCategories = [
   {
     icon: Database,
     title: "Data",
-    skills: ["PostgreSQL", "MongoDB", "Pandas","Numpy","Apache Spark", "dbt"],
+    skills: ["PostgreSQL", "MongoDB", "Pandas", "Numpy", "Apache Spark", "dbt", "Tableau", "Power BI"],
   },
   {
     icon: Rocket,
