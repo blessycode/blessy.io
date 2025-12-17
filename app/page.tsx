@@ -170,35 +170,17 @@ export default function Home() {
         <ModalComponent onClose={() => setShowWorkExperience(false)} title="Work Experience">
           <div className="space-y-6">
             <WorkItemComponent
-              company="Tech Startup Inc."
-              role="Senior ML Engineer"
-              period="2022 - Present"
+              company="International Data Analytics Consultancy (IDAC)"
+              role="Junior Data Anaylst"
+              period="2022 - 2023"
               highlights={[
-                "Led ML infrastructure migration to AWS, reducing costs by 40%",
-                "Built real-time recommendation system serving 1M+ users",
-                "Mentored team of 3 junior engineers",
+                "Developed machine learning models for credit risk assessment using Python and scikit-learn, ensuring predictive accuracy and regulatory compliance.",
+                "Designed custom variations of SMOTE and resampling techniques to address class imbalance in skewed financial datasets.",
+                "Assisted with model validation, documentation, and reporting for reproducibility and deployment readiness.",
               ]}
             />
-            <WorkItemComponent
-              company="Data Corp"
-              role="Data Scientist"
-              period="2020 - 2022"
-              highlights={[
-                "Developed predictive models improving forecast accuracy by 35%",
-                "Automated reporting pipelines saving 15hrs/week",
-                "Collaborated with product team on A/B testing framework",
-              ]}
-            />
-            <WorkItemComponent
-              company="Analytics Firm"
-              role="Junior Data Analyst"
-              period="2019 - 2020"
-              highlights={[
-                "Built dashboards for executive reporting",
-                "Performed exploratory analysis on customer behavior",
-                "Supported data quality initiatives",
-              ]}
-            />
+            
+            
           </div>
         </ModalComponent>
       )}
