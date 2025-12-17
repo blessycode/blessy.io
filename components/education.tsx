@@ -7,24 +7,16 @@ export interface EducationItem {
 
 export const educationData: EducationItem[] = [
   {
-    institution: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    period: "2015 - 2019",
+    institution: "University of Zimbabwe",
+    degree: "Bachelor of Science in Data Science and Systems",
+    period: "2020 - 2024",
     highlights: [
       "Specialized in Machine Learning and Data Science",
       "Graduated with honors",
-      "Relevant coursework: Statistics, Linear Algebra, Data Structures",
+      "Relevant coursework: Statistics, Linear Algebra, Data Structures, Deep Learning, Database Systems",
     ],
   },
-  {
-    institution: "Online Platform",
-    degree: "Advanced Machine Learning Specialization",
-    period: "2020",
-    highlights: [
-      "Deep Learning and Neural Networks",
-      "ML Engineering and MLOps",
-    ],
-  },
+  
 ]
 
 export function Education() {

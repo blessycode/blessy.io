@@ -129,13 +129,13 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-4">
           <a
-            href="mailto:hello@example.com"
+            href="mailto:zhoublessed16@gmail.com"
             className="px-6 py-3 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
           >
             Send an email
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/blessed-zhou-56b3b029b"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-card text-card-foreground border border-border rounded-full hover:border-primary/50 transition-colors"
@@ -143,12 +143,20 @@ export default function Home() {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/blessycode"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-card text-card-foreground border border-border rounded-full hover:border-primary/50 transition-colors"
           >
             GitHub
+          </a>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-card text-card-foreground border border-border rounded-full hover:border-primary/50 transition-colors"
+          >
+            Twitter
           </a>
         </div>
       </section>
