@@ -1,13 +1,10 @@
 import { Code2, Database, Rocket, GitBranch, LineChart, FlaskConical } from "lucide-react"
 
-// Tools list for use in page.tsx
-export const toolsList = ["Python", "ML", "APIs", "Deployment", "MLOps", "SQL", "PyTorch", "Docker", "AWS"]
-
-const skillCategories = [
+export const skillCategories = [
   {
     icon: Code2,
     title: "Languages",
-    skills: ["Python", "SQL", "R", "TypeScript"],
+    skills: ["Python", "SQL", "R", "TypeScript", "JavaScript"],
   },
   {
     icon: LineChart,
@@ -17,24 +14,38 @@ const skillCategories = [
   {
     icon: Database,
     title: "Data",
-    skills: ["PostgreSQL", "MongoDB", "Pandas", "Apache Spark", "dbt"],
+    skills: ["PostgreSQL", "MongoDB", "Pandas","Numpy","Apache Spark", "dbt"],
   },
   {
     icon: Rocket,
     title: "Deployment",
-    skills: ["Docker", "Kubernetes", "AWS", "FastAPI", "REST APIs"],
+    skills: ["Docker", "Azure", "FastAPI", "REST APIs", "Django", "Flask"],
   },
   {
     icon: GitBranch,
     title: "MLOps",
-    skills: ["MLflow", "Airflow", "GitHub Actions", "DVC"],
+    skills: ["MLflow", "Airflow"]
   },
   {
     icon: FlaskConical,
     title: "Research",
-    skills: ["A/B Testing", "Experimentation", "Statistical Analysis"],
+    skills: ["Latex", "Predictive Analytics", "Statistical Analysis"],
   },
 ]
+
+// Flat tools list for use in `app/page.tsx` (derived from categories to avoid duplication)
+export const toolsList = (() => {
+  const seen = new Set<string>()
+  const ordered: string[] = []
+  for (const category of skillCategories) {
+    for (const skill of category.skills) {
+      if (seen.has(skill)) continue
+      seen.add(skill)
+      ordered.push(skill)
+    }
+  }
+  return ordered
+})()
 
 export function Skills() {
   return (
