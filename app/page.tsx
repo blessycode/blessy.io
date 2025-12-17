@@ -39,7 +39,7 @@ export default function Home() {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl text-pretty">
-            Applied Data Scientist & ML Engineer turning messy data into clean solutions.
+            Data Scientist & ML Engineer turning messy data into clean solutions.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
