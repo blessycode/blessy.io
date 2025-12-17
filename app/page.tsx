@@ -8,6 +8,7 @@ import WorkItemComponent from "./WorkItem"
 import { allProjects } from "@/components/projects"
 import { toolsList } from "@/components/skills"
 import { Education } from "@/components/education"
+import { Competitions } from "@/components/competitions"
 
 export default function Home() {
   const [showWorkExperience, setShowWorkExperience] = useState(false)
@@ -99,6 +100,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Competitions */}
+      <Competitions />
 
       {/* Education */}
       <Education />
