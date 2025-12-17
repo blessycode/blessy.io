@@ -151,7 +151,7 @@ export default function Home() {
             GitHub
           </a>
           <a
-            href=""
+            href="https://x.com/bless13210"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-card text-card-foreground border border-border rounded-full hover:border-primary/50 transition-colors"
