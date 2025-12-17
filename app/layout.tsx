@@ -9,25 +9,14 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portfolio | Data Scientist & ML Engineer",
+  title: "Blessed Zhou - Data Scientist & ML Engineer",
   description: "Building data-driven AI systems ✨",
-  generator: "v0.app",
+  authors: [{ name: "Blessed Zhou" }],
   icons: {
     icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon", type: "image/png", sizes: "64x64" },
     ],
-    apple: "/apple-icon.png",
   },
 }
 
