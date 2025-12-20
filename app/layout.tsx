@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://blessy.io"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://blessy-io.vercel.app/"),
   title: {
     default: "Blessed Zhou - Data Scientist & ML Engineer",
     template: "%s | Blessed Zhou",
@@ -96,7 +96,7 @@ export default function RootLayout({
     jobTitle: "Data Scientist & Machine Learning Engineer",
     description:
       "Data Scientist & ML Engineer specializing in machine learning, predictive analytics, and building production-ready AI systems.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://blessy.io",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://blessy-io.vercel.app/",
     sameAs: [
       "https://www.linkedin.com/in/blessed-zhou-56b3b029b",
       "https://github.com/blessycode",
