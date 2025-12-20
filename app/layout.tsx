@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "Data Scientist & ML Engineer specializing in machine learning, predictive analytics, and building production-ready AI systems. Experience in Python, PyTorch, TensorFlow, and end-to-end ML pipelines.",
   keywords: [
     "Data Scientist",
+    "Blessed Zhou",
     "Machine Learning Engineer",
     "ML Engineer",
     "Python",
