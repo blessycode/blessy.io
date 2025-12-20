@@ -9,14 +9,77 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Blessed Zhou - Data Scientist & ML Engineer",
-  description: "Building data-driven AI systems ✨",
-  authors: [{ name: "Blessed Zhou" }],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://blessy.io"),
+  title: {
+    default: "Blessed Zhou - Data Scientist & ML Engineer",
+    template: "%s | Blessed Zhou",
+  },
+  description:
+    "Data Scientist & ML Engineer specializing in machine learning, predictive analytics, and building production-ready AI systems. Experience in Python, PyTorch, TensorFlow, and end-to-end ML pipelines.",
+  keywords: [
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "ML Engineer",
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "Data Science",
+    "AI",
+    "Predictive Analytics",
+    "MLOps",
+    "Deep Learning",
+    "NLP",
+    "Computer Vision",
+    "Zimbabwe",
+  ],
+  authors: [{ name: "Blessed Zhou", url: "https://github.com/blessycode" }],
+  creator: "Blessed Zhou",
+  publisher: "Blessed Zhou",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "Blessed Zhou - Portfolio",
+    title: "Blessed Zhou - Data Scientist & ML Engineer",
+    description:
+      "Data Scientist & ML Engineer specializing in machine learning, predictive analytics, and building production-ready AI systems.",
+    images: [
+      {
+        url: "/profile.png",
+        width: 1200,
+        height: 630,
+        alt: "Blessed Zhou - Data Scientist & ML Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blessed Zhou - Data Scientist & ML Engineer",
+    description:
+      "Data Scientist & ML Engineer specializing in machine learning, predictive analytics, and building production-ready AI systems.",
+    creator: "@bless13210",
+    images: ["/profile.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/icon", type: "image/png", sizes: "64x64" },
     ],
+    apple: "/icon.svg",
+  },
+  alternates: {
+    canonical: "/",
   },
 }
 
@@ -25,12 +88,48 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Blessed Zhou",
+    jobTitle: "Data Scientist & Machine Learning Engineer",
+    description:
+      "Data Scientist & ML Engineer specializing in machine learning, predictive analytics, and building production-ready AI systems.",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://blessy.io",
+    sameAs: [
+      "https://www.linkedin.com/in/blessed-zhou-56b3b029b",
+      "https://github.com/blessycode",
+      "https://x.com/bless13210",
+    ],
+    email: "zhoublessed16@gmail.com",
+    knowsAbout: [
+      "Machine Learning",
+      "Data Science",
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "Deep Learning",
+      "Predictive Analytics",
+      "MLOps",
+      "Natural Language Processing",
+      "Computer Vision",
+    ],
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "University of Zimbabwe",
+    },
+  }
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-        {children}
-        <Analytics />
+          {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

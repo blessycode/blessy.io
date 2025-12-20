@@ -27,8 +27,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-xl animate-pulse-subtle" />
               <img
                 src="/profile.png"
-                alt="Profile"
+                alt="Blessed Zhou - Data Scientist and Machine Learning Engineer"
                 className="relative w-24 h-24 rounded-full object-cover border-4 border-border"
+                width={96}
+                height={96}
               />
             </div>
             <div className="flex-1">
